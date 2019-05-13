@@ -1,4 +1,10 @@
-# gatsby-plugin-segment-js
+# Gatsby Segment Js - plugin
+
+
+*This plugin extends the core gatsby-plugin-segment-js and adds an option to stop the analytics.load() happening
+on page render. This allows you to create functionality for the web user to set there cookie preferences, in compliance with the EU Cookie Law.*
+
+
 
 A lightweight & feature-rich Gatsby plugin to easily add [Segment JS snippet](https://segment.com/docs/sources/website/analytics.js/quickstart/) to your site.
 
@@ -40,10 +46,25 @@ plugins: [
             // to include analytics.page() automatically
             // if false, see below on how to track pageviews manually
             trackPage: false
+            // change this to true for standard settings
+            // or keep as false to call this manually
+            // this effectively pauses the scripts and cookies form loading
+            loadOnRender: false,
         }
     }
 ];
 ```
+
+### Track Events
+
+Manually begin the load scripts by calling window.analytics.load(writeKey)
+If you have a more complex configuration which enables users to select
+between different levels of cookies (analytics / tracking / marketing)
+you can pass an object to load which sets individual apps.
+
+analytics.load('writekey', { integrations: { All: false, 'Google Analytics': true, 'Segment.io': true } })
+
+[See Segment docs for more info](https://segment.com/docs/sources/website/analytics.js/#load-options)
 
 ### Track Events
 

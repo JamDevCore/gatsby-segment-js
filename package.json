@@ -1,7 +1,7 @@
 {
   "name": "gatsby-segment",
   "description": "Add Segment JS to gatsby site",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "gatsby-ssr.js",
   "repository": {
     "type": "git",

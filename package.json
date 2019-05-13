@@ -1,0 +1,30 @@
+{
+    "name": "gatsby-segment-js",
+    "description": "Add Segment JS to gatsby site",
+    "version": "0.0.1",
+    "main": "gatsby-ssr.js",
+    "repository": "git@github.com:Ja,esVitaly/gatsby-segment-js.git",
+    "author": "JamesVitaly",
+    "license": "MIT",
+    "keywords": [
+        "segment analytics",
+        "segment",
+        "segment javascript",
+        "analytics.js",
+        "gatsby",
+        "gatsby-plugin"
+    ],
+    "scripts": {
+        "build": "babel src --out-dir . --ignore __tests__",
+        "watch": "babel -w src --out-dir . --ignore __tests__"
+    },
+    "bugs": {
+        "url": "https://github.com/JamesVitaly/gatsby-segment-js/issues"
+    },
+    "homepage": "https://github.com/JamesVitaly/gatsby-segment-js#readme",
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1"
+    }
+}

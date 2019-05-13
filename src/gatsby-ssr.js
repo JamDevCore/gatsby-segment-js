@@ -2,7 +2,7 @@ import React from "react";
 
 exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     const { trackPage, prodKey, devKey, loadOnRender } = pluginOptions;
-
+    console.log(loadOn)
     // ensures Segment write key is present
     if (!prodKey || prodKey.length < 10)
         console.error("segment prodKey must be at least 10 char in length");
@@ -26,7 +26,6 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     ${includeLoadOnRender}
     ${includeTrackPage}
   `;
-   if(loadOnRender) snippet.concat(`analytics.load(${writeKey})`);
 
     // only render snippet if write key exists
     if (writeKey) {

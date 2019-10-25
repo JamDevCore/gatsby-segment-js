@@ -2,7 +2,7 @@
 
 
 *This plugin extends the core gatsby-plugin-segment-js and adds an option to stop the analytics.load() happening
-on page render. This allows you to create functionality for the web user to set there cookie preferences, in compliance with the EU Cookie Law.*
+on page render. This allows you to create functionality for the web user to set their cookie preferences, in compliance with the EU Cookie Law.*
 
 
 

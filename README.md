@@ -48,7 +48,7 @@ plugins: [
             trackPage: false
             // change this to true for standard settings
             // or keep as false to call this manually
-            // this effectively pauses the scripts and cookies form loading
+            // this effectively pauses the scripts and cookies from loading
             loadOnRender: false,
         }
     }
@@ -62,7 +62,9 @@ If you have a more complex configuration which enables users to select
 between different levels of cookies (analytics / tracking / marketing)
 you can pass an object to load which sets individual apps.
 
+```
 analytics.load('writekey', { integrations: { All: false, 'Google Analytics': true, 'Segment.io': true } })
+```
 
 [See Segment docs for more info](https://segment.com/docs/sources/website/analytics.js/#load-options)
 

@@ -18,8 +18,8 @@ Packed with features:
 
 ## Install
 
--   NPM: `$ yarn add gatsby-segment-js`
--   YARN: `$ npm install --save gatsby-segment-js`
+-   NPM: `$ yarn add gatsby-segment`
+-   YARN: `$ npm install --save gatsby-segment`
 
 ## How to use
 

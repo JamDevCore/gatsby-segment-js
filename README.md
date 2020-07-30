@@ -18,8 +18,8 @@ Packed with features:
 
 ## Install
 
--   NPM: `$ yarn add gatsby-segment-js`
--   YARN: `$ npm install --save gatsby-segment-js`
+-   NPM: `$ yarn add gatsby-segment`
+-   YARN: `$ npm install --save gatsby-segment`
 
 ## How to use
 
@@ -30,7 +30,7 @@ In your gatsby-config.js file:
 ```javascript
 plugins: [
     {
-        resolve: `gatsby-segment-js`,
+        resolve: `gatsby-segment`,
         options: {
             // your segment write key for your production environment
             // when process.env.NODE_ENV === 'production'
